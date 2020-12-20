@@ -1,0 +1,7 @@
+node_modules/*
+x64/*
+.idea/*
+build/*
+temp/*
+__pycache__/*
+package-lock.json

@@ -1,0 +1,1 @@
+terminalizer record demo --config config.yml

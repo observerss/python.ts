@@ -1,0 +1,751 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: cmd.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\HJC\Documents\Projects\python.ts
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 81
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 27
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 545
+    content: "\e[2J\e[m\e[HMicrosoft Windows [版本 10.0.19042.630]\e]0;C:\\Windows\\SYSTEM32\\cmd.exe\a\e[?25h"
+  - delay: 10
+    content: "\e[25l\r\n(c) 2020 Microsoft Corporation. 保留所有权利。\r\n\e[46X\r\nC:\\Users\\HJC\\Documents\\Projects\\python.ts>  \e[4;45H\e[?25h"
+  - delay: 1322
+    content: p
+  - delay: 329
+    content: "\b \b"
+  - delay: 103
+    content: t
+  - delay: 104
+    content: 'y'
+  - delay: 80
+    content: p
+  - delay: 154
+    content: e
+  - delay: 119
+    content: ' '
+  - delay: 807
+    content: p
+  - delay: 208
+    content: l
+  - delay: 97
+    content: u
+  - delay: 99
+    content: "\e[25l\e[4;45H\e[?25h"
+  - delay: 9
+    content: type plugins
+  - delay: 844
+    content: \
+  - delay: 503
+    content: D
+  - delay: 192
+    content: u
+  - delay: 176
+    content: "\e[25l\e[4;45H\e[?25h"
+  - delay: 14
+    content: type plugins\Dummy
+  - delay: 691
+    content: \
+  - delay: 527
+    content: _
+  - delay: 144
+    content: _
+  - delay: 233
+    content: i
+  - delay: 47
+    content: 'n'
+  - delay: 136
+    content: "\e[25l\e[4;45H\e[?25h"
+  - delay: 20
+    content: type plugins\Dummy\__init__.py
+  - delay: 436
+    content: "\r\n"
+  - delay: 16
+    content: "#!/usr/bin/env python\e[23X\r\n# -*- coding: utf-8 -*-\e[21X\r\n\e[44X\r\nclass Dummy:\e[32X\r\n    def dummy(self):\e[24X\r\n        return \"dummy\"\e[22X\r\n\e[44X\r\nC:\\Users\\HJC\\Documents\\Projects\\python.ts>"
+  - delay: 2904
+    content: 'n'
+  - delay: 401
+    content: "\b \b"
+  - delay: 80
+    content: t
+  - delay: 167
+    content: s
+  - delay: 72
+    content: '-'
+  - delay: 161
+    content: 'n'
+  - delay: 111
+    content: o
+  - delay: 122
+    content: d
+  - delay: 159
+    content: e
+  - delay: 105
+    content: "\r\n"
+  - delay: 14
+    content: "\e]0;C:\\Windows\\SYSTEM32\\cmd.exe - ts-node\a"
+  - delay: 254
+    content: "\e[25l>\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[13;3H\e[?25h"
+  - delay: 1372
+    content: i
+  - delay: 99
+    content: m
+  - delay: 43
+    content: p
+  - delay: 72
+    content: o
+  - delay: 81
+    content: r
+  - delay: 144
+    content: t
+  - delay: 74
+    content: ' '
+  - delay: 173
+    content: '{'
+  - delay: 194
+    content: P
+  - delay: 231
+    content: 'y'
+  - delay: 153
+    content: t
+  - delay: 64
+    content: h
+  - delay: 102
+    content: o
+  - delay: 105
+    content: 'n'
+  - delay: 216
+    content: '}'
+  - delay: 143
+    content: ' '
+  - delay: 240
+    content: f
+  - delay: 186
+    content: r
+  - delay: 79
+    content: o
+  - delay: 87
+    content: m
+  - delay: 32
+    content: ' '
+  - delay: 672
+    content: ''''
+  - delay: 257
+    content: p
+  - delay: 216
+    content: l
+  - delay: 248
+    content: "\r"
+  - delay: 11
+    content: "\e[25l> import {Python} from 'p\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[13;26H\e[?25h"
+  - delay: 141
+    content: "\r"
+  - delay: 15
+    content: "\e[25l> import {Python} from '\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[13;25H\e[?25h"
+  - delay: 258
+    content: .
+  - delay: 95
+    content: /
+  - delay: 271
+    content: s
+  - delay: 280
+    content: r
+  - delay: 216
+    content: c
+  - delay: 105
+    content: /
+  - delay: 239
+    content: p
+  - delay: 208
+    content: l
+  - delay: 152
+    content: u
+  - delay: 152
+    content: g
+  - delay: 80
+    content: i
+  - delay: 81
+    content: 'n'
+  - delay: 97
+    content: s
+  - delay: 174
+    content: ''''
+  - delay: 226
+    content: "\r\n"
+  - delay: 583
+    content: "{}\r\n"
+  - delay: 17
+    content: "\e[25l>\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[15;3H\e[?25h"
+  - delay: 1326
+    content: i
+  - delay: 394
+    content: "\r"
+  - delay: 12
+    content: "\e[25l>\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[15;3H\e[?25h"
+  - delay: 828
+    content: l
+  - delay: 110
+    content: e
+  - delay: 128
+    content: t
+  - delay: 81
+    content: ' '
+  - delay: 175
+    content: p
+  - delay: 169
+    content: 'y'
+  - delay: 105
+    content: ' '
+  - delay: 135
+    content: '='
+  - delay: 79
+    content: ' '
+  - delay: 400
+    content: 'n'
+  - delay: 129
+    content: e
+  - delay: 55
+    content: w
+  - delay: 120
+    content: ' '
+  - delay: 272
+    content: P
+  - delay: 209
+    content: 'y'
+  - delay: 143
+    content: t
+  - delay: 176
+    content: o
+  - delay: 337
+    content: "\r"
+  - delay: 15
+    content: "\e[25l> let py = new Pyt\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[15;19H\e[?25h"
+  - delay: 256
+    content: h
+  - delay: 112
+    content: o
+  - delay: 96
+    content: 'n'
+  - delay: 233
+    content: (
+  - delay: 64
+    content: )
+  - delay: 288
+    content: "\r\n"
+  - delay: 66
+    content: "\e[90mundefined\r\n"
+  - delay: 17
+    content: "\e[25l\e[m>\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[17;3H\e[?25h"
+  - delay: 1383
+    content: l
+  - delay: 110
+    content: e
+  - delay: 160
+    content: t
+  - delay: 114
+    content: ' '
+  - delay: 141
+    content: o
+  - delay: 129
+    content: s
+  - delay: 583
+    content: ' '
+  - delay: 153
+    content: '='
+  - delay: 152
+    content: ' '
+  - delay: 1473
+    content: p
+  - delay: 150
+    content: 'y'
+  - delay: 560
+    content: .
+  - delay: 290
+    content: i
+  - delay: 134
+    content: m
+  - delay: 28
+    content: p
+  - delay: 52
+    content: o
+  - delay: 89
+    content: r
+  - delay: 159
+    content: t
+  - delay: 248
+    content: (
+  - delay: 264
+    content: '"'
+  - delay: 329
+    content: o
+  - delay: 128
+    content: s
+  - delay: 240
+    content: '"'
+  - delay: 305
+    content: )
+  - delay: 679
+    content: "\r\n"
+  - delay: 38
+    content: "\e[90mundefined\r\n"
+  - delay: 15
+    content: "\e[25l\e[m>\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\r\n\e[K\e[19;3H\e[?25h"
+  - delay: 690
+    content: o
+  - delay: 136
+    content: s
+  - delay: 192
+    content: .
+  - delay: 192
+    content: l
+  - delay: 97
+    content: i
+  - delay: 72
+    content: s
+  - delay: 135
+    content: t
+  - delay: 239
+    content: d
+  - delay: 113
+    content: i
+  - delay: 96
+    content: r
+  - delay: 256
+    content: (
+  - delay: 55
+    content: )
+  - delay: 321
+    content: "\r\n"
+  - delay: 8
+    content: "[\e[38X\r\n  \e[32m'.git'\e[m,\e[10X\e[32m\e[10C'.gitignore'\e[m,       \r\n  \e[32m'.idea'\e[m,\e[9X\e[32m\e[9C'binding.gyp'\e[m,      \r\n  \e[32m'build'\e[m,\e[9X\e[32m\e[9C'docs'\e[m,\e[13X\r\n  \e[32m'node_modules'\e[m,  \e[32m'package-lock.json'\e[m,\r\n  \e[32m'package.json'\e[m,  \e[32m'plugins'\e[m,\e[10X\r\n  \e[32m'README.md'\e[m,     \e[32m'record'\e[m,\e[11X\r\n  \e[32m'src'\e[m,\e[11X\e[32m\e[11C'tests'\e[m,\e[12X\r\n  \e[32m'tsconfig.json'\e[m, \e[32m'x64'\e[m\e[K\r\n]\r\n>\e[1C"
+  - delay: 3084
+    content: i
+  - delay: 106
+    content: m
+  - delay: 94
+    content: p
+  - delay: 65
+    content: o
+  - delay: 112
+    content: r
+  - delay: 223
+    content: t
+  - delay: 329
+    content: "\r"
+  - delay: 14
+    content: "> impor\e[K"
+  - delay: 113
+    content: "\r"
+  - delay: 11
+    content: "> impo\e[K"
+  - delay: 142
+    content: "\r"
+  - delay: 14
+    content: "> imp\e[K"
+  - delay: 130
+    content: "\r"
+  - delay: 12
+    content: "> im\e[K"
+  - delay: 139
+    content: "\r"
+  - delay: 16
+    content: "> i\e[K"
+  - delay: 137
+    content: "\r"
+  - delay: 18
+    content: ">\e[K\e[1C"
+  - delay: 367
+    content: l
+  - delay: 166
+    content: e
+  - delay: 80
+    content: t
+  - delay: 128
+    content: ' '
+  - delay: 689
+    content: D
+  - delay: 191
+    content: u
+  - delay: 216
+    content: m
+  - delay: 153
+    content: m
+  - delay: 240
+    content: 'y'
+  - delay: 136
+    content: ' '
+  - delay: 151
+    content: '='
+  - delay: 81
+    content: ' '
+  - delay: 1345
+    content: p
+  - delay: 175
+    content: 'y'
+  - delay: 241
+    content: .
+  - delay: 239
+    content: i
+  - delay: 128
+    content: m
+  - delay: 39
+    content: p
+  - delay: 64
+    content: o
+  - delay: 130
+    content: r
+  - delay: 134
+    content: t
+  - delay: 320
+    content: (
+  - delay: 272
+    content: '"'
+  - delay: 289
+    content: D
+  - delay: 280
+    content: u
+  - delay: 248
+    content: m
+  - delay: 120
+    content: m
+  - delay: 239
+    content: 'y'
+  - delay: 273
+    content: '"'
+  - delay: 279
+    content: )
+  - delay: 336
+    content: "\r\n"
+  - delay: 10
+    content: "\e[90mundefined\r"
+  - delay: 12
+    content: "\e[m\n>\e[1C"
+  - delay: 626
+    content: D
+  - delay: 176
+    content: u
+  - delay: 289
+    content: m
+  - delay: 144
+    content: m
+  - delay: 271
+    content: 'y'
+  - delay: 249
+    content: "\r\n"
+  - delay: 8
+    content: "{\r\n  Dummy: \e[36m[Function]\e[m,\e[K\r\e[32m\n\e[m  __cached__: \e[32m'C:\\\\Users\\\\HJC\\\\Documents\\\\Projects\\\\python.ts\\\\plugins\\\\Dummy\\\\\b\e[m\r\n\e[32m__pycache__\\\\__init__.cpython-38.pyc'\e[m,\e[32m\e[K\r\e[m\n  __doc__: \e[1m\e[97mnull\e[m,\e[K\r\e[32m\n\e[m  __file__: \e[32m'C:\\\\Users\\\\HJC\\\\Documents\\\\Projects\\\\python.ts\\\\plugins\\\\Dummy\\\\__\b\e[m\r\n\e[32minit__.py'\e[m,\e[32m\e[K\r\e[m\n  __name__: \e[32m'Dummy'\e[m,\e[K\r\n  __package__: \e[32m'Dummy'\e[m,\e[K\r\n  __path__: [\r\n    \e[32m'C:\\\\Users\\\\HJC\\\\Documents\\\\Projects\\\\python.ts\\\\plugins\\\\Dummy'\e[m\e[K\r\n  ]\r\n}\r\n>\e[1C"
+  - delay: 1969
+    content: d
+  - delay: 353
+    content: "\r"
+  - delay: 17
+    content: ">\e[K\e[1C"
+  - delay: 1214
+    content: l
+  - delay: 97
+    content: e
+  - delay: 153
+    content: t
+  - delay: 113
+    content: ' '
+  - delay: 454
+    content: d
+  - delay: 135
+    content: m
+  - delay: 2538
+    content: "\r"
+  - delay: 14
+    content: "> let d\e[K"
+  - delay: 160
+    content: "\r"
+  - delay: 10
+    content: "> let\e[K\e[1C"
+  - delay: 454
+    content: d
+  - delay: 104
+    content: m
+  - delay: 80
+    content: ' '
+  - delay: 185
+    content: '='
+  - delay: 98
+    content: ' '
+  - delay: 613
+    content: D
+  - delay: 153
+    content: u
+  - delay: 193
+    content: m
+  - delay: 143
+    content: m
+  - delay: 247
+    content: 'y'
+  - delay: 417
+    content: .
+  - delay: 288
+    content: D
+  - delay: 176
+    content: u
+  - delay: 208
+    content: m
+  - delay: 151
+    content: m
+  - delay: 296
+    content: 'y'
+  - delay: 272
+    content: (
+  - delay: 57
+    content: )
+  - delay: 433
+    content: "\r\n"
+  - delay: 10
+    content: "\e[90mundefined\r"
+  - delay: 12
+    content: "\e[m\n>\e[1C"
+  - delay: 968
+    content: d
+  - delay: 115
+    content: m
+  - delay: 855
+    content: "\r\n"
+  - delay: 9
+    content: "{\r\n  type: \e[32m'python.ts/PyObject*'\e[m,\e[K\r\n  value: \e[32m'1337250869200'\e[m,\e[K\r\n  repr: \e[32m'<Dummy.Dummy object at 0x000001375A5CEFD0>'\e[m,\e[K\r\n  pytype: \e[32m'Dummy'\e[m,\e[K\r\n  time: \e[33m1606369803\e[m,\e[K\r\n  index: \e[33m9\e[m,\e[K\r\n  unwrap: \e[36m[Function]\e[m\e[K\r\n}\r\n>\e[1C"
+  - delay: 2107
+    content: d
+  - delay: 143
+    content: m
+  - delay: 457
+    content: .
+  - delay: 271
+    content: u
+  - delay: 200
+    content: 'n'
+  - delay: 144
+    content: w
+  - delay: 120
+    content: r
+  - delay: 113
+    content: a
+  - delay: 112
+    content: p
+  - delay: 303
+    content: (
+  - delay: 23
+    content: )
+  - delay: 1129
+    content: "\b"
+  - delay: 496
+    content: "\e[1C"
+  - delay: 1370
+    content: "\e[25l\e[27;3H\e[?25h"
+  - delay: 1398
+    content: "\r"
+  - delay: 13
+    content: "\e[25l> ddm.unwrap()\e[K\e[27;4H\e[?25h"
+  - delay: 244
+    content: "\r> dmdm.unwrap()\e[K"
+  - delay: 18
+    content: "\e[25l\e[27;5H\e[?25h"
+  - delay: 262
+    content: "\r"
+  - delay: 19
+    content: "\e[25l> dm2dm.unwrap()\e[K\e[27;6H\e[?25h"
+  - delay: 71
+    content: "\r"
+  - delay: 24
+    content: "\e[25l> dm2 dm.unwrap()\e[K\e[27;7H\e[?25h"
+  - delay: 102
+    content: "\r"
+  - delay: 22
+    content: "\e[25l> dm2 =dm.unwrap()\e[K\e[27;8H\e[?25h"
+  - delay: 65
+    content: "\r"
+  - delay: 13
+    content: "\e[25l> dm2 = dm.unwrap()\e[K\e[27;9H\e[?25h"
+  - delay: 923
+    content: "\b"
+  - delay: 500
+    content: "\b"
+  - delay: 47
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 520
+    content: "\r"
+  - delay: 24
+    content: "\e[25l> ldm2 = dm.unwrap()\e[K\e[27;4H\e[?25h"
+  - delay: 128
+    content: "\r"
+  - delay: 11
+    content: "\e[25l> ledm2 = dm.unwrap()\e[K\e[27;5H\e[?25h"
+  - delay: 92
+    content: "\r"
+  - delay: 18
+    content: "\e[25l> letdm2 = dm.unwrap()\e[K\e[27;6H\e[?25h"
+  - delay: 55
+    content: "\r"
+  - delay: 22
+    content: "\e[25l> let dm2 = dm.unwrap()\e[K\e[27;7H\e[?25h"
+  - delay: 145
+    content: "\e[17C\r"
+  - delay: 8
+    content: "\n\e[90mundefined\e[m\e[K\r"
+  - delay: 16
+    content: "\n>\e[1C"
+  - delay: 385
+    content: d
+  - delay: 119
+    content: m
+  - delay: 344
+    content: '2'
+  - delay: 928
+    content: "\r\n"
+  - delay: 9
+    content: "{\r\n  __class__: \e[36m[Function]\e[m,\e[K\r\n  __delattr__: \e[36m[Function]\e[m,\e[K\r\n  __dict__: {},\r\n  __dir__: \e[36m[Function]\e[m,\e[K\r\n  __doc__: \e[1m\e[97mnull\e[m,\e[K\r\n  __eq__: \e[36m[Function]\e[m,\e[K\r\n  __format__: \e[36m[Function]\e[m,\e[K\r\n  __ge__: \e[36m[Function]\e[m,\e[K\r\n  __getattribute__: \e[36m[Function]\e[m,\e[K\r\n  __gt__: \e[36m[Function]\e[m,\e[K\r\n  __hash__: \e[36m[Function]\e[m,\e[K\r\n  __init__: \e[36m[Function]\e[m,\e[K\r\n  __init_subclass__: \e[36m[Function]\e[m,\e[K\r\n  __le__: \e[36m[Function]\e[m,\e[K\r\n  __lt__: \e[36m[Function]\e[m,\e[K\r\n  __module__: \e[32m'Dummy'\e[m,\e[K\r\n  __ne__: \e[36m[Function]\e[m,\e[K\r\n  __new__: \e[36m[Function]\e[m,\e[K\r\n  __reduce__: \e[36m[Function]\e[m,\e[K\r\n  __reduce_ex__: \e[36m[Function]\e[m,\e[K\r\n  __repr__: \e[36m[Function]\e[m,\e[K\r\n  __setattr__: \e[36m[Function]\e[m,\e[K\r\n  __sizeof__: \e[36m[Function]\e[m,\e[K\r\n  __str__: \e[36m[Function]\e[m,\e[K\r\n  __subclasshook__: \e[36m[Function]\e[m,\e[K\r\n  __weakref__: \e[1m\e[97mnull\e[m,\e[K\r\n  dummy: \e[36m[Function]\e[m\e[K\r\n}\r"
+  - delay: 7
+    content: "\n>\e[1C"
+  - delay: 4267
+    content: d
+  - delay: 145
+    content: m
+  - delay: 167
+    content: '2'
+  - delay: 128
+    content: .
+  - delay: 200
+    content: d
+  - delay: 121
+    content: u
+  - delay: 233
+    content: m
+  - delay: 134
+    content: m
+  - delay: 280
+    content: 'y'
+  - delay: 304
+    content: (
+  - delay: 72
+    content: )
+  - delay: 736
+    content: "\r\n"
+  - delay: 7
+    content: "\e[32m'dummy'\r"
+  - delay: 500
+    content: "\r\n"
+  - delay: 3000
+    content: "\r\n"
+  - delay: 3000
+    content: "\r\n"
+  - delay: 3000
+    content: "\r\n"
+  - delay: 3000
+    content: "\r\n"
