@@ -24,7 +24,8 @@
 1. 安装
 
    ```bash
-   npm install
+   npm install -g yarn
+   yarn
    ```
 
    在 \*NIX 系 统下, 用 Docker 会轻松一点, 否则 Python 因为系统自带, 多版本的时候管理起来有点麻烦, 详见 [Pitfalls](#pitfalls) 部分的说明

@@ -4,13 +4,16 @@
   "description": "Run Python Code in NodeJS",
   "gypfile": true,
   "main": "./src/python.ts",
+  "license": "CC-BY-4.0",
   "scripts": {
+    "preinstall": "npm install adm-zip && node src/getpy.js",
     "build": "node-gyp rebuild",
     "clean": "node-gyp clean",
     "bench": "ts-node tests/bench.ts",
     "test": "ts-node tests/test.ts"
   },
   "dependencies": {
+    "adm-zip": "^0.5.1",
     "bindings": "^1.5.0",
     "node-pre-gyp": "^0.16.0"
   },

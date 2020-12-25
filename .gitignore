@@ -3,5 +3,6 @@ x64/*
 .idea/*
 build/*
 temp/*
-__pycache__/*
+**/__pycache__/*
 package-lock.json
+yarn.lock
