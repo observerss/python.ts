@@ -1,7 +1,7 @@
 {
   "name": "python.ts",
   "version": "0.3.1",
-  "description": "Run Python Code in NodeJS",
+  "description": "Run Python code in NodeJS",
   "gypfile": true,
   "main": "./src/python.ts",
   "license": "CC-BY-4.0",

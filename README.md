@@ -1,4 +1,4 @@
-# python.ts: run Python in NodeJS
+# python.ts: Embed and run Python code in NodeJS
 
 嵌入 Python 到 NodeJS 中, 使得 NodeJS 中可以调用任意 Python 模块和方法
 
