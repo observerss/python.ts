@@ -23,14 +23,18 @@
 
 1. 安装
 
-   在 Windows 下，下载[Python3.8-Windows-x64.zip](https://github.com/observerss/python.ts/releases/download/v0/python3.8-windows-x64.zip)把文件解压到当前目录下的`x64`目录, 确保存在`x64/python38.dll`文件
+   **A）在 Windows 下**，确保安装了Python（官方安装包，建议安装到C:\Python39，以免踩node-gyp编码的坑），确保安装了Visual Studio 2017以上，并安装了C++开发环境。
+   
+   然后下载 [Python3.8-Windows-x64.zip](https://github.com/observerss/python.ts/releases/download/v0/python3.8-windows-x64.zip) 把文件解压到当前目录下的`x64`目录, 确保存在`x64/python38.dll`文件
 
    ```bash
    npm install -g yarn
    yarn
    ```
+   
+   如果编译失败，也可以下载预编译的x64版本的 [python-ts.node](https://github.com/observerss/python.ts/releases/download/v0.3.2/python-ts.node) ，放入`build`目录，一样可以用
 
-   在 \*NIX 系 统下, 用 Docker 会轻松一点, 否则 Python 因为系统自带, 多版本的时候管理起来有点麻烦, 详见 [Pitfalls](#pitfalls) 部分的说明
+   **B）在 \*NIX 系统下**, 用 Docker 会轻松一点, 否则 Python 因为系统自带, 多版本的时候管理起来有点麻烦, 详见 [Pitfalls](#pitfalls) 部分的说明
 
    ```bash
    docker build -t python.ts .
