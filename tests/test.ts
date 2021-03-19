@@ -148,6 +148,13 @@ function testContext (): void {
   console.log('. testContext OK!')
 }
 
+function testBytes (): void {
+  const py = new Python()
+  const  hashlib = py.import("hashlib")
+  hashlib.md5(Buffer.from("123")).unwrap().digest()
+  console.log('. testBytes OK!')
+}
+
 function test (): void {
   testClear()
   testGc()
@@ -159,6 +166,7 @@ function test (): void {
   testAsync().catch((err) => console.error(err))
   testThreader()
   testMultiprocessor()
+  testBytes()
 }
 
 test()

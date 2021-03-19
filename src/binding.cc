@@ -330,7 +330,11 @@ bool __in_same_context(const Napi::Env &env, const Napi::Value &value, Napi::Obj
     Napi::Array arr, keys;
     uint32_t i;
 
-    if (value.IsArray())
+    if (value.IsBuffer()) {
+        // 有些类型需要单独处理一下，否则会FATAL ERROR
+        return true;
+    }
+    else if (value.IsArray())
     {
         arr = value.As<Napi::Array>();
         if (cref.insert(&arr).second)
@@ -420,6 +424,14 @@ PyObject *__napi_value_to_pyobject(Napi::Env &env, Napi::Value &value,
         if (debug)
             printf("String! %s\n", value.As<Napi::String>().Utf8Value().c_str());
         return Py_BuildValue("s", value.As<Napi::String>().Utf8Value().c_str());
+    }
+    else if (value.IsBuffer())
+    {
+        // buffer => bytes
+        Napi::Buffer<char> buffer = value.As<Napi::Buffer<char>>();
+        if (debug)
+            printf("Buffer! %s\n", value.As<Napi::String>().Utf8Value().c_str());
+        return Py_BuildValue("y#", (char*)(buffer.Data()), buffer.Length());
     }
     else if (value.IsArray())
     {
@@ -538,6 +550,12 @@ Napi::Value __pyobject_to_napi_value(const Napi::Env &env, PyObject *object, PyT
         if (debug)
             printf("PyUnicode, %s\n", PyUnicode_AsUTF8(object));
         result = Napi::String::New(env, PyUnicode_AsUTF8(object));
+    }
+    else if (PyBytes_Check(object))
+    {
+        if (debug)
+            printf("PyBytes, %s\n", PyBytes_AsString(object));
+        result = Napi::Buffer<char>::Copy(env, PyBytes_AsString(object), PyBytes_Size(object));
     }
     else if (PyTuple_Check(object))
     {
